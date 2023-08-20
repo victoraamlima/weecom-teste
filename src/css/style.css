@@ -1,0 +1,298 @@
+.home {
+  position: relative;
+  background-image: url("../images/pawel-czerwinski-FAlYVtV1kRg-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1935px;
+  /* max-width: 100%; */
+  height: 960px;
+
+  color: #fff;
+
+  display: flex;
+}
+
+.home .balls {
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(
+    143deg,
+    rgba(224, 226, 109, 0.6) 0%,
+    rgba(214, 15, 247, 0.4) 100%
+  );
+}
+
+.home .balls.ball-1 {
+  width: 488px;
+  height: 488px;
+  top: 174px;
+  left: 182px;
+  filter: blur(0px);
+  backdrop-filter: blur(24px);
+}
+
+.home .balls.ball-2 {
+  width: 327px;
+  height: 327px;
+  top: 418px;
+  right: 410px;
+  filter: blur(12.5px);
+  backdrop-filter: blur(24px);
+}
+
+.home .home-text-container {
+  margin: 188px 0 0 297px;
+  z-index: 4;
+  width: 1246px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .home-text-container h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 100px;
+  margin-bottom: 24px;
+}
+
+.home .home-text-container .highlighted-text {
+  color: #cfff11;
+}
+
+.home .home-text-container h3 {
+  text-align: right;
+  font-family: "K2D", sans-serif;
+  font-size: 96px;
+  font-weight: 300;
+  line-height: 100px;
+}
+
+.home .home-text-container p {
+  text-align: right;
+  font-family: "kanit", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.home .home-text-container button {
+  all: unset;
+  font-family: "kanit", sans-serif;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  margin-top: 64px;
+  padding: 16px 40px;
+  gap: 24px;
+  border-radius: 40px;
+  background: #6c40e9;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 7.36px;
+}
+
+.about-us {
+  position: relative;
+  height: 1208px;
+}
+
+.about-us .about-us-image-grid {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 89px;
+  width: 1440px;
+  height: 720px;
+}
+
+.about-us .title-article {
+  position: absolute;
+  left: 649px;
+  top: 137px;
+  color: #333333;
+  font-family: "kanit", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 100px;
+  z-index: 5;
+}
+
+.about-us h2 span {
+  color: #d9d9d9;
+}
+
+.about-us .images-container {
+  top: 110px;
+  position: relative;
+  left: 835px;
+  width: 709px;
+}
+
+.about-us .about-us-image-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 709px;
+  height: 473px;
+  border-radius: 40px;
+}
+
+.about-us .about-us-image-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -146px;
+  top: 441px;
+  width: 486px;
+  height: 324px;
+  border-radius: 40px;
+}
+
+.about-us .square {
+  position: absolute;
+  width: 484px;
+  height: 315px;
+  left: -110px;
+  top: 405px;
+  background-image: url("../images/Rectangle.png");
+}
+
+.about-us .about-us-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  left: 325px;
+  top: 281px;
+  font-family: "kanit", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 512px;
+}
+
+.about-us .clients {
+  position: absolute;
+  bottom: 69px;
+  left: 301px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us .clients h2 {
+  font-family: "kanit", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 100px;
+}
+
+.about-us .clients .clients-logo {
+  display: flex;
+  gap: 64px;
+}
+
+.about-us .clients .clients-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-projects .our-projects-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #000916 0%, #070010 100%);
+}
+
+.our-projects .our-projects-header h2 {
+  color: #d9d9d9;
+  font-family: "kanit", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 100px;
+}
+
+.our-projects .our-projects-header ul {
+  display: flex;
+  gap: 23px;
+}
+
+.our-projects .our-projects-header .our-projects-types {
+  color: #cfff11;
+  font-family: "kanit", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 26.5px 29px 26.5px 49px;
+  height: 100%;
+  position: relative;
+  border-radius: 40px;
+  background-color: rgba(166, 129, 242, 0.3);
+}
+
+.our-projects .our-projects-header .our-projects-types.type-2 {
+  margin-top: 50px;
+}
+
+.our-projects .our-projects-header .our-projects-types.type-3 {
+  margin-top: 11px;
+}
+
+.our-projects .our-projects-header .our-projects-types.type-4 {
+  margin-top: 69px;
+}
+
+.our-projects .our-projects-header .our-projects-types.type-5 {
+  margin-top: 58px;
+}
+
+/* .our-projects .our-projects-header svg {
+  width: 265px;
+  height: 1160px;
+} */
+
+/* .our-projects .our-projects-header li::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/Vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 10px;
+}  */
+
+.our-projects .achievements {
+  display: flex;
+  gap: 146px;
+  margin-top: 96px;
+}
+
+/* .our-projects .achievements .completed-projects {
+  display: flex;
+  flex-direction: column;
+} */
+
+.our-projects .achievements h3 {
+  font-family: "K2D", sans-serif;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 100px;
+  color: #fff;
+}
+
+.our-projects .achievements p {
+  font-family: "K2D", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.our-projects .carousel {
+  display: flex;
+  margin-top: 124px;
+}

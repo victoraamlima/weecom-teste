@@ -4,21 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weecom - Teste Front-End</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:wght@300;800&family=Kanit:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="63" height="59" viewBox="0 0 63 59" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M58.939 31.4133C58.9794 30.7807 59 30.1428 59 29.5C59 15.8864 49.7785 4.42653 37.2411 1.02614C39.2057 0.360785 41.3107 0 43.5 0C54.2696 0 63 8.73045 63 19.5C63 23.9861 61.4851 28.1184 58.939 31.4133ZM58.939 31.4133C57.9531 46.814 45.1496 59 29.5 59C13.2076 59 0 45.7924 0 29.5C0 13.2076 13.2076 0 29.5 0C32.1788 0 34.7741 0.357046 37.2411 1.02614C29.5417 3.63381 24 10.9197 24 19.5C24 30.2696 32.7304 39 43.5 39C49.7834 39 55.3727 36.0281 58.939 31.4133Z" fill="#6C40E9"/>
-          </svg>
-        <div>
+    <header class="header">
+      <div class="company-logo">
+        <svg
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="63"
+          height="59"
+          viewBox="0 0 63 59"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M58.939 31.4133C58.9794 30.7807 59 30.1428 59 29.5C59 15.8864 49.7785 4.42653 37.2411 1.02614C39.2057 0.360785 41.3107 0 43.5 0C54.2696 0 63 8.73045 63 19.5C63 23.9861 61.4851 28.1184 58.939 31.4133ZM58.939 31.4133C57.9531 46.814 45.1496 59 29.5 59C13.2076 59 0 45.7924 0 29.5C0 13.2076 13.2076 0 29.5 0C32.1788 0 34.7741 0.357046 37.2411 1.02614C29.5417 3.63381 24 10.9197 24 19.5C24 30.2696 32.7304 39 43.5 39C49.7834 39 55.3727 36.0281 58.939 31.4133Z"
+            fill="#6C40E9"
+          />
+        </svg>
+
+        <div class="company-name">
           <h1>BEADY</h1>
 
           <h2>AGENCY</h2>
         </div>
       </div>
 
-      <nav>
+      <nav class="menu">
         <h2>Home</h2>
         <h2>About Us</h2>
         <h2>Services</h2>
@@ -28,85 +52,160 @@
       </nav>
     </header>
 
-    <article>
-      <h2></h2>
+    <article class="home">
+      <div class="balls ball-1"></div>
+      <div class="balls ball-2"></div>
 
-      <h3></h3>
+      <div class="home-text-container">
+        <h2>
+          <span class="highlighted-text"> CREATIVE </span>
+          DIGITAL SOLUTIONS\
+        </h2>
 
-      <p></p>
+        <h3>
+          FOR YOUR MVP’S
+          <span class="highlighted-text"> PRODUCTS</span>.
+        </h3>
 
-      <button></button>
+        <p>Win your pitch, build effective products</p>
+
+        <button>
+          <span> Book a call </span>
+          <img
+            class="right-arrow"
+            src="./src/images/arrow-right.png"
+            alt="right arrow"
+          />
+        </button>
+      </div>
     </article>
-    <article>
-      <h2></h2>
 
-      <img src="" alt="" />
-      <img src="" alt="" />
+    <article class="about-us">
+      <!-- <div> -->
+      <img
+        src="./src/images/background-square.png"
+        alt="grid"
+        class="about-us-image-grid"
+      />
 
-      <p></p>
-      <footer>
-        <h2></h2>
+      <h2 class="title-article">
+        About
+        <span> us </span>
+      </h2>
 
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
+      <div class="images-container">
+        <img
+          src="./src/images/jr-korpa-cyzTs075qMc-unsplash-1.png"
+          alt=""
+          class="about-us-image-1"
+        />
+        <img
+          src="./src/images/brian-mcgowan-GmKHxZZJcb4-unsplash.png"
+          alt=""
+          class="about-us-image-2"
+        />
+        <div class="square"></div>
+      </div>
+
+      <div class="about-us-text-container">
+        <p>
+          BEADY AGENCY, A CREATIVE DIGITAL AGENCY FOR MVP’S DIGITAL PRODUCTS. WE
+          ARE SERVING DIGITAL STARTUPS CLIENTS WORLDWIDE.
+        </p>
+        <p>
+          IT’S VERY IMPORTANT TO START EFFECTIVELY YET POWERFUL AND DELIGHTFUL
+          FOR YOUR MVP’S PRODUCTS - IT'S ABOUT CRAFTING SOLUTIONS THAT GIVE YOU
+          A COMPELLING FEATURES AND DELIGHTFUL LOOKS TO ATTRACT ANY POTENTIAL
+          CHANCES IN THE DIGITAL WORLD.
+        </p>
+      </div>
+      <!-- </div> -->
+      <footer class="clients">
+        <h2>Our Clients</h2>
+
+        <div class="clients-logo">
+          <img src="./src/images/logos/ainol-logo.png" alt="" />
+          <img src="./src/images/logos/metal3-icon-black-logo.png" alt="" />
+          <img
+            src="./src/images/logos/boom-technology-logo-black-logo.jpg"
+            alt=""
+          />
+          <img src="./src/images/logos/grupo-logo.png" alt="" />
+          <img src="./src/images/logos/haute-logo.png" alt="" />
+          <img
+            src="./src/images/logos/africa-fintech-foundry-logo.png"
+            alt=""
+          />
+          <img src="./src/images/logos/airtex-logo.png" alt="" />
+        </div>
       </footer>
     </article>
-    <article>
-      <h2></h2>
 
-      <div>
-        <h2></h2>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-      </div>
+    <article class="our-projects">
+      <header class="our-projects-header">
+        <h2>Our Projects</h2>
 
-      <div>
-        <div>
-          <h3></h3>
+        <ul>
+          <li class="our-projects-types type-1">Web Design</li>
+          <li class="our-projects-types type-2">Mobile Apps</li>
+          <li class="our-projects-types type-3">Saas</li>
+          <li class="our-projects-types type-4">Design System</li>
+          <li class="our-projects-types type-5">Brand</li>
+        </ul>
 
-          <p></p>
+        <div class="achievements">
+          <div class="completed-projects">
+            <h3>156</h3>
+
+            <p>Completed Projects</p>
+          </div>
+
+          <div>
+            <h3>30</h3>
+
+            <p>Awards & Features</p>
+          </div>
         </div>
+      </header>
 
+      <nav class="carousel">
         <div>
-          <h3></h3>
+          <img
+            src="./src/images/luke-chesser-JKUTrJ4vK00-unsplash.png"
+            alt="Busto de um homem"
+          />
 
-          <p></p>
+          <div>
+            <h4></h4>
+
+            <span></span>
+          </div>
         </div>
-      </div>
-
-      <div>
         <div>
-          <img src="" alt="" />
+          <img
+            src="./src/images/path-digital-tR0jvlsmCuQ-unsplash.png"
+            alt="desenho de um homem olhando celular"
+          />
 
-          <h4></h4>
+          <div>
+            <h4></h4>
 
-          <h5></h5>
+            <span></span>
+          </div>
         </div>
-
         <div>
-          <img src="" alt="" />
+          <img
+            src="./src/images/brian-mcgowan-WJ0WWNdmJ3Y-unsplash.png"
+            alt="Homem olhando celular"
+          />
 
-          <h4></h4>
+          <div>
+            <h4></h4>
 
-          <h5></h5>
+            <span></span>
+          </div>
         </div>
-
-        <div>
-          <img src="" alt="" />
-
-          <h4></h4>
-
-          <h5></h5>
-        </div>
-      </div>
+      </nav>
       <div>
         <button></button>
         <button></button>
