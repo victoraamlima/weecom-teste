@@ -7,7 +7,9 @@
   padding: 0 29.3rem 0 32.5rem ;
   color: #fff;
   width: 100%;
+  max-width: 1920px;
   z-index: 5;
+
 }
 
 .header .company-logo {
