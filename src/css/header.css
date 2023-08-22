@@ -3,12 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 30px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 1325px;
+  top: 3rem;
+  padding: 0 29.3rem 0 32.5rem ;
   color: #fff;
+  width: 100%;
   z-index: 5;
 }
 
@@ -20,15 +18,15 @@
 
 .header .company-logo .company-name h1 {
   font-family: "K2D", sans-serif;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 800;
 }
 
 .header .company-logo .company-name h2 {
   font-family: "Kanit", sans-serif;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
-  letter-spacing: 10.86px;
+  letter-spacing: 1.086rem;
 }
 
 .header .menu {
@@ -38,7 +36,8 @@
 
 .header .menu h2 {
   font-family: "Kanit", sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   padding: 8px;
+  white-space: nowrap;
 }
