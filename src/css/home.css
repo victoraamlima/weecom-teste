@@ -1,0 +1,86 @@
+.home {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 192rem;
+  height: 96rem;
+  color: #fff;
+  background-image: url("../images/pawel-czerwinski-FAlYVtV1kRg-unsplash\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .balls-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 17.4rem;
+  left: 18.2rem;
+  width: 132.8rem;
+  height: 57.1rem;
+}
+
+.home .balls {
+  border-radius: 100%;
+  background: linear-gradient(
+    143deg,
+    rgba(224, 226, 109, 0.6) 0%,
+    rgba(214, 15, 247, 0.4) 100%
+  );
+}
+
+.home .balls.ball-1 {
+  width: 48.8rem;
+  height: 48.8rem;
+  filter: blur(0px);
+  backdrop-filter: blur(24px);
+}
+
+.home .balls.ball-2 {
+  align-self: flex-end;
+  width: 32.7rem;
+  height: 32.7rem;
+  filter: blur(12.5px);
+  backdrop-filter: blur(24px);
+}
+
+.home .home-text-container {
+  margin: 18.8rem 0 0 29.7rem;
+  /* margin: 188px 0 0 calc( 1vw * (2970/192)); */
+  /* margin: 188px 0 0 15.46vw; */
+  z-index: 4;
+  width: 124.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .home-text-container h2 {
+  font-family: "K2D", sans-serif;
+  font-size: 9.6rem;
+  font-weight: 800;
+  line-height: 10rem;
+  margin-bottom: 2.4rem;
+}
+
+.home .home-text-container .highlighted-text {
+  color: #cfff11;
+}
+
+.home .home-text-container h3 {
+  text-align: right;
+  font-family: "K2D", sans-serif;
+  font-size: 9.6rem;
+  font-weight: 300;
+  line-height: 10rem;
+  margin-bottom: 0.8rem;
+}
+
+.home .home-text-container p {
+  text-align: right;
+  font-family: "kanit", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+

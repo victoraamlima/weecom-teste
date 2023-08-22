@@ -5,114 +5,74 @@ body {
   background-color: #28103e;
 }
 
-.home {
-  position: relative;
-  background-image: url("../images/pawel-czerwinski-FAlYVtV1kRg-unsplash\ 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  max-width: 1920px;
-  /* max-width: 100%; */
-  height: 960px;
-
-  color: #fff;
-
-  display: flex;
-}
-
-.home .balls-container {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 174px;
-  left: 182px;
-  width: 1328px;
-  height: 571px;
-}
-
-.home .balls {
-  /* position: absolute; */
-  border-radius: 100%;
-  background: linear-gradient(
-    143deg,
-    rgba(224, 226, 109, 0.6) 0%,
-    rgba(214, 15, 247, 0.4) 100%
-  );
-}
-
-.home .balls.ball-1 {
-  width: 488px;
-  height: 488px;
-  /* top: 174px; */
-  /* left: 182px; */
-  filter: blur(0px);
-  backdrop-filter: blur(24px);
-}
-
-.home .balls.ball-2 {
-  align-self: flex-end;
-  width: 327px;
-  height: 327px;
-  /* top: 418px; */
-  /* right: 410px; */
-  filter: blur(12.5px);
-  backdrop-filter: blur(24px);
-}
-
-.home .home-text-container {
-  margin: 188px 0 0 297px;
-  /* margin: 188px 0 0 calc( 1vw * (2970/192)); */
-  /* margin: 188px 0 0 15.46vw; */
-  z-index: 4;
-  width: 1246px;
-  display: flex;
-  flex-direction: column;
-}
-
-.home .home-text-container h2 {
-  font-family: "K2D", sans-serif;
-  font-size: 96px;
-  font-weight: 800;
-  line-height: 100px;
-  margin-bottom: 24px;
-}
-
-.home .home-text-container .highlighted-text {
-  color: #cfff11;
-}
-
-.home .home-text-container h3 {
-  text-align: right;
-  font-family: "K2D", sans-serif;
-  font-size: 96px;
-  font-weight: 300;
-  line-height: 100px;
-}
-
-.home .home-text-container p {
-  text-align: right;
-  font-family: "kanit", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.home .home-text-container button {
+.pattern-button {
   all: unset;
-  font-family: "kanit", sans-serif;
   display: flex;
   align-self: flex-end;
   align-items: center;
-  margin-top: 64px;
-  padding: 16px 40px;
-  gap: 24px;
-  border-radius: 40px;
-  background: #6c40e9;
-  color: #fff;
-  font-size: 32px;
+  gap: 2.4rem;
+  margin-top: 6.4rem;
+  padding: 1.6rem 4rem;
+  border-radius: 4rem;
+  font-family: "kanit", sans-serif;
+  font-size: 3.2rem;
   font-weight: 400;
-  letter-spacing: 7.36px;
+  letter-spacing: 0.736rem;
+  color: #fff;
+  background: #6c40e9;
+  box-sizing: border-box;
+  position: relative;
 }
+
+.pattern-button .arrow {
+  position: relative;
+  width: 55px;
+  height: 3px;
+  background-color: #fff;
+  z-index: 7;
+  border-radius: 10px;
+}
+
+.pattern-button .arrow:before,
+.pattern-button .arrow:after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  width: 35%;
+  height: 95%;
+  position: absolute;
+  /* transition: 0.2s ease-in-out; */
+  border-radius: 10px;
+  right: -2.5px;
+}
+
+.pattern-button .arrow:before {
+  top: -6px;
+  rotate: 45deg;
+}
+
+.pattern-button .arrow:after {
+  top: 6px;
+  rotate: -45deg;
+}
+
+.pattern-button:hover {
+  background: #fff;
+  outline: 2px solid #28103e;
+  color: #28103e;
+}
+
+.pattern-button:hover .arrow {
+  background-color: #28103e;
+}
+
+.pattern-button:hover .arrow:before,
+.pattern-button:hover .arrow:after {
+  background-color: #28103e;
+}
+
+
+
 
 .about-us {
   position: relative;
@@ -120,7 +80,6 @@ body {
   background-color: #fff;
   width: 100%;
   max-width: 1920px;
-  
 }
 
 .about-us .about-us-image-grid {
@@ -444,6 +403,7 @@ body {
   gap: 32px;
   border-radius: 20px;
   backdrop-filter: blur(20px);
+  border: 1px solid #f5f5f5;
   background: rgba(255, 255, 255, 0.15);
 }
 
