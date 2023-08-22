@@ -24,17 +24,17 @@ body {
   position: relative;
 }
 
-.pattern-button .arrow {
+.arrow {
   position: relative;
   width: 55px;
   height: 3px;
   background-color: #fff;
   z-index: 7;
-  border-radius: 10px;
+  border-radius:0 10px 10px 0;
 }
 
-.pattern-button .arrow:before,
-.pattern-button .arrow:after {
+.arrow:before,
+.arrow:after {
   background-color: #fff;
   content: "";
   display: block;
@@ -46,12 +46,12 @@ body {
   right: -2.5px;
 }
 
-.pattern-button .arrow:before {
+.arrow:before {
   top: -6px;
   rotate: 45deg;
 }
 
-.pattern-button .arrow:after {
+.arrow:after {
   top: 6px;
   rotate: -45deg;
 }
@@ -71,265 +71,17 @@ body {
   background-color: #28103e;
 }
 
-
-
-
-.our-projects {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1920px;
-}
-
-.our-projects .our-projects-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 59px 0 124px 0;
-  background: linear-gradient(180deg, #000916 0%, #070010 100%);
-}
-
-.our-projects .our-projects-header h2 {
-  color: #d9d9d9;
-  font-family: "kanit", sans-serif;
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 100px;
-  white-space: nowrap;
-}
-
-.our-projects .our-projects-header ul {
-  display: flex;
-  gap: 23px;
-}
-
-.our-projects .our-projects-header .our-projects-types {
-  color: #cfff11;
-  font-family: "kanit", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  padding: 26.5px 29px 26.5px 49px;
-  height: 100%;
-  position: relative;
-  border-radius: 40px;
-  background-color: rgba(166, 129, 242, 0.3);
-  white-space: nowrap;
-}
-
-.our-projects .our-projects-header .our-projects-types.type-2 {
-  margin-top: 50px;
-}
-
-.our-projects .our-projects-header .our-projects-types.type-3 {
-  margin-top: 11px;
-}
-
-.our-projects .our-projects-header .our-projects-types.type-4 {
-  margin-top: 69px;
-}
-
-.our-projects .our-projects-header .our-projects-types.type-5 {
-  margin-top: 58px;
-}
-
-/* .our-projects .our-projects-header svg {
-  width: 265px;
-  height: 1160px;
-} */
-
-/* .our-projects .our-projects-header li::after {
-    content: "";
-    position: absolute;
-    background-image: url("../images/Vector.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 10px;
-}  */
-
-.our-projects .achievements {
-  display: flex;
-  gap: 146px;
-  margin-top: 96px;
-}
-
-/* .our-projects .achievements .completed-projects {
-  display: flex;
-  flex-direction: column;
-} */
-
-.our-projects .achievements h3 {
-  font-family: "K2D", sans-serif;
-  font-size: 96px;
-  font-weight: 800;
-  line-height: 100px;
-  color: #fff;
-}
-
-.our-projects .achievements p {
-  font-family: "K2D", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  color: #fff;
-  white-space: nowrap;
-}
-
-.our-projects .carousel {
-  display: flex;
-  position: relative;
-}
-
-.our-projects .carousel .carousel-images-container {
-  height: 457px;
-  width: calc(100% / 3);
-}
-
-.our-projects .carousel .carousel-images {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center top;
-  display: flex;
-  align-items: flex-end;
-}
-
-.our-projects .carousel .carousel-images footer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 28px 40px;
-  background: linear-gradient(
-    0deg,
-    rgba(29, 29, 29, 0.6) 0%,
-    rgba(249, 249, 249, 0) 100%
-  );
-}
-
-.our-projects .carousel .carousel-images.image-1 {
-  background-image: url("../images/luke-chesser-JKUTrJ4vK00-unsplash.png");
-}
-.our-projects .carousel .carousel-images.image-2 {
-  background-image: url("../images/path-digital-tR0jvlsmCuQ-unsplash.png");
-}
-.our-projects .carousel .carousel-images.image-3 {
-  background-image: url("../images/brian-mcgowan-WJ0WWNdmJ3Y-unsplash.png");
-}
-
-.our-projects .carousel .carousel-images h4 {
-  color: #fff;
-  font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 4.6px;
-  padding: 8px 20px;
-  border-radius: 40px;
-  border: 1px solid #f2f2f2;
-  /* width: fit-content; */
-  white-space: nowrap;
-}
-
-.our-projects .carousel .carousel-images span {
-  color: #fff;
-  font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 4.6px;
-  width: fit-content;
-  white-space: nowrap;
-}
-
-.button-container {
+/* .button-container {
   position: absolute;
   display: flex;
-  gap: 16px;
+  gap: 1.6rem;
   z-index: 5;
-}
+} */
 
-.button-container.projects-button {
-  bottom: -135px;
-  right: 145px;
-}
 
-.our-projects button {
-  all: unset;
-  display: flex;
-  height: 64px;
-  padding: 0 32px;
-  border-radius: 40px;
-  border: 1px solid #f5f5f5;
-}
 
-.our-projects button img {
-  width: 78px;
-}
 
-.our-projects .left-arrow {
-  rotate: 180deg;
-}
-
-.our-projects .our-projects-testimonials {
-  background-color: #6c40e9;
-  background-image: url("../images/kai-dahms-SbrZdkLtTCY-unsplash.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  padding: 307px 180px 210px;
-  align-items: center;
-}
-
-.our-projects .our-projects-testimonials .carousel-testimonials {
-  display: flex;
-  gap: 21px;
-  position: relative;
-}
-
-.our-projects .our-projects-testimonials .carousel-testimonials .carousel-card {
-  display: flex;
-  padding: 42px;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 32px;
-  border-radius: 20px;
-  backdrop-filter: blur(20px);
-  border: 1px solid #f5f5f5;
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.our-projects .our-projects-testimonials h3 {
-  color: #f2f2f2;
-  font-family: "Kanit", sans-serif;
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 100px;
-  margin-bottom: 42px;
-}
-
-.our-projects .our-projects-testimonials p {
-  color: #f2f2f2;
-  font-family: "Kanit", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  letter-spacing: 1.28px;
-  width: 308px;
-}
-
-.our-projects .our-projects-testimonials span {
-  color: #fff;
-  font-family: "Kanit", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.button-container.testimonials-button {
-  bottom: -113px;
-  right: 0;
-}
-
-.service-description {
+.careers {
   display: flex;
   flex-direction: column;
   padding: 72px 0;
@@ -340,7 +92,7 @@ body {
   max-width: 1920px;
 }
 
-.service-description .image-grid {
+.careers .image-grid {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -351,7 +103,7 @@ body {
   z-index: 0;
 }
 
-.service-description p {
+.careers p {
   color: #4d2c6b;
   text-align: center;
   font-family: "Kanit", sans-serif;
@@ -363,7 +115,7 @@ body {
   width: 1223px;
 }
 
-.service-description button {
+.careers button {
   all: unset;
   font-family: "kanit", sans-serif;
   display: flex;
