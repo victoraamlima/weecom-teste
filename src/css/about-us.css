@@ -6,13 +6,8 @@
   background-color: #fff;
 }
 
-.about-us .image-grid {
-  position: absolute;
+.about-us .about-us-grid {
   top: 8.9rem;
-  width: 144rem;
-  height: 72rem;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about-us .title-article {
