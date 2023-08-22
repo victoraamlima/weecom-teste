@@ -1,0 +1,114 @@
+.contact-us {
+  display: flex;
+  /* gap: 9.7rem; */
+  gap: calc(1vw * (97 / 19.2));
+  position: relative;
+  padding: 8rem 0 8rem 8rem;
+  padding: 8rem;
+  width: 100%;
+  max-width: 192rem;
+  background-color: #28103e;
+}
+
+.contact-us .contact-us-email h2 {
+  color: #f2f2f2;
+  font-family: "kanit", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.contact-us .contact-us-email p {
+  color: #fff;
+  font-family: "kanit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.contact-us .contact-us-email p:last-child {
+  color: #e9ce40;
+}
+
+.contact-us .our-address {
+  color: #f2f2f2;
+  font-family: "kanit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-width: 19.6rem;
+}
+
+.contact-us .our-address h3 {
+  color: #e9ce40;
+  margin-bottom: 2.4rem;
+}
+
+.contact-us .our-address p:nth-child(2) {
+  margin-bottom: 2.4rem;
+}
+
+.contact-us .footer-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.contact-us .footer-list-container li {
+  color: #f2f2f2;
+  font-family: "kanit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.contact-us .footer-list-container li:first-child {
+  color: #e9ce40;
+}
+
+.contact-us .join-newsletter h2 {
+  color: #f2f2f2;
+  margin-bottom: 2.3rem;
+  font-family: "kanit", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.contact-us .join-newsletter .join-newsletter-button {
+  /* gap: 7.5rem; */
+  gap: calc(1vw * (75 / 19.2));
+  padding: 1.6rem 3.2rem 1.6rem 4rem;
+  border: 2px solid #d9d9d9;
+  white-space: nowrap;
+  font-size: 2rem;
+  letter-spacing: 0.46rem;
+  background: transparent;
+}
+
+.contact-us .join-newsletter .join-newsletter-button .arrow {
+  position: relative;
+  width: 55px;
+  height: 3px;
+  z-index: 7;
+  border-radius: 0 10px 10px 0;
+  background-color: #fff;
+}
+
+.contact-us .join-newsletter .join-newsletter-button:hover {
+  color: #fff;
+}
+
+.pattern-button:hover .arrow,
+.pattern-button:hover .arrow:before,
+.pattern-button:hover .arrow:after {
+  background-color: #fff;
+}
+
+.contact-us .copyright {
+  position: absolute;
+  left: 8.2rem;
+  bottom: 1.9rem;
+  font-family: "kanit", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #b1b1b1;
+}
