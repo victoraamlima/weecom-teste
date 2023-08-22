@@ -1,0 +1,110 @@
+.about-us {
+  position: relative;
+  height: 120.8rem;
+  width: 100%;
+  max-width: 192rem;
+  background-color: #fff;
+}
+
+.about-us .image-grid {
+  position: absolute;
+  top: 8.9rem;
+  width: 144rem;
+  height: 72rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us .title-article {
+  position: absolute;
+  left: 64.9rem;
+  top: 13.7rem;
+  font-family: "kanit", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 10rem;
+  white-space: nowrap;
+  color: #333333;
+  z-index: 5;
+}
+
+.about-us h2 span {
+  color: #d9d9d9;
+}
+
+.about-us .images-container {
+  position: relative;
+  top: 11rem;
+  left: 83.5rem;
+  width: fit-content;
+}
+
+.about-us .about-us-image-1 {
+  /* width: 709px; */
+  /* height: 473px; */
+  width: 100%;
+  height: 100%;
+  border-radius: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us .about-us-image-2 {
+  position: relative;
+  left: -14.6rem;
+  top: -6.2rem;
+  width: 48.6rem;
+  height: 32.4rem;
+  border-radius: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-us .square {
+  position: absolute;
+  left: 3.6rem;
+  top: -3.6rem;
+  width: 48.4rem;
+  height: 31.5rem;
+  background-image: url("../images/Rectangle.png");
+}
+
+.about-us .about-us-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: absolute;
+  left: 32.5rem;
+  top: 28.1rem;
+  width: 51.2rem;
+  font-family: "kanit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.about-us .clients {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  position: absolute;
+  bottom: 6.9rem;
+  left: 30.1rem;
+}
+
+.about-us .clients h2 {
+  font-family: "kanit", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 10rem;
+  white-space: nowrap;
+}
+
+.about-us .clients .clients-logo {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.about-us .clients .clients-logo li {
+  width: 100%;
+  height: 100%;
+}
