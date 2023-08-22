@@ -3,8 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 3rem;
-  padding: 0 27.8rem 0 32.5rem;
+  top: 30px;
+  padding: 0 278px 0 325px;
   color: #fff;
   width: 100%;
   max-width: 1920px;
@@ -19,15 +19,15 @@
 
 .header .company-logo .company-name h1 {
   font-family: "K2D", sans-serif;
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: 800;
 }
 
 .header .company-logo .company-name h2 {
   font-family: "Kanit", sans-serif;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 1.086rem;
+  letter-spacing: 10.86px;
 }
 
 .header .menu ul {
@@ -105,13 +105,13 @@
 
 @media (max-width: 1500px) {
   .header {
-    padding: 0 15rem 0 10rem;
+    padding: 0 150px 0 100px;
   }
 }
 
 @media (max-width: 1250px) {
   .header {
-    padding: 0 3rem 0 3rem;
+    padding: 0 30px;
   }
 }
 
@@ -151,7 +151,7 @@
 
 @media (max-width: 450px) {
   .header {
-    padding: 0 1.6rem;
+    padding: 0 16px;
   }
 
   .header .company-logo .company-name  {
