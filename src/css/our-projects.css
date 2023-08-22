@@ -26,6 +26,7 @@
   display: flex;
   gap: 23px;
   margin-top: 1.4rem;
+  padding: 0 3rem;
 }
 
 .our-projects .our-projects-header .our-projects-types {
@@ -198,7 +199,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30.7rem 0 21rem;
+  padding: 30.7rem 3rem 21rem;
+  /* padding: 0 3rem; */
   background-color: #6c40e9;
   background-image: url("../images/kai-dahms-SbrZdkLtTCY-unsplash.png");
   background-size: cover;
@@ -209,6 +211,8 @@
   display: flex;
   gap: 2.1rem;
   position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .our-projects .our-projects-testimonials .carousel-testimonials .carousel-card {

@@ -47,8 +47,8 @@
 }
 
 .home .home-text-container {
-  margin: 18.8rem 0 0 29.7rem;
-  /* margin: 188px 0 0 calc( 1vw * (2970/192)); */
+  /* margin: 18.8rem 0 0 29.7rem; */
+  margin: 18.8rem 10rem 0 calc( 1vw * (297/19.2));
   /* margin: 188px 0 0 15.46vw; */
   z-index: 4;
   width: 124.6rem;
