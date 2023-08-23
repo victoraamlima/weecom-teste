@@ -26,8 +26,8 @@ body {
 
 .arrow {
   position: relative;
-  width: 55px;
-  height: 3px;
+  width: 5.5rem;
+  height: 0.3rem;
   background-color: #fff;
   z-index: 7;
   border-radius: 0 10px 10px 0;
@@ -47,12 +47,12 @@ body {
 }
 
 .arrow:before {
-  top: -6px;
+  top: -0.6rem;
   rotate: 45deg;
 }
 
 .arrow:after {
-  top: 6px;
+  top: 0.6rem;
   rotate: -45deg;
 }
 
@@ -88,8 +88,12 @@ body {
 
 .image-grid {
   position: absolute;
-  width: 144rem;
-  height: 72rem;
+  /* width: 144rem; */
+  max-width: 144rem;
+  width: 100%;
+  max-height: 72rem;
+  height: 100%;
+  background-image: url("../images/background-square.png");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
