@@ -7,6 +7,7 @@
   padding: 0 278px 0 325px;
   color: #fff;
   width: 100%;
+  /* max-width: 1920px; */
   max-width: 1920px;
   z-index: 5;
 }
@@ -97,7 +98,7 @@
 
 .header .menu li {
   font-family: "Kanit", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 400;
   padding: 8px;
   white-space: nowrap;
@@ -131,6 +132,7 @@
   .header .menu {
     position: absolute;
     top: 8px;
+    top: calc(50% - 30px);
     right: 20px;
     z-index: 1;
   }
@@ -154,7 +156,12 @@
     padding: 0 16px;
   }
 
-  .header .company-logo .company-name  {
-  display: none;
+  .header .company-logo svg {
+    width: 41.644px;
+    height: 39px;
+  }
+
+  .header .company-logo .company-name {
+    display: none;
   }
 }
