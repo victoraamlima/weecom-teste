@@ -61,6 +61,13 @@
 }
 
 @media (max-width: 900px) {
+  .image-grid {
+    width: 1440px;
+    height: 638px;
+    max-width: 1440px;
+    max-height: 720px;
+  }
+
   .home {
     padding: 121px 16px 33px;
     justify-content: center;
@@ -117,7 +124,11 @@
 
   .about-us {
     gap: 63px;
-    padding: 36px 17px;
+    padding: 36px 17px 50px;
+  }
+
+  .about-us .about-us-grid {
+    top: 24px;
   }
 
   .about-us .content-container {
@@ -148,6 +159,7 @@
 
   .about-us .clients {
     padding: 0 27px;
+    align-items: center;
   }
 
   .our-projects .our-projects-header ul {
@@ -189,28 +201,31 @@
   }
 }
 
-/* @media (max-width: 600px) {
-  .home {
-    padding: 121px 16px 33px;
+@media (max-width: 600px) {
+  .about-us .images-container {
+    height: 280px;
+    padding-left: 58.6px;
+  }
+  .about-us .about-us-image-1 {
+    width: 282.635px;
+    height: 188.556px;
   }
 
-  .home .home-text-container h2 {
-    width: 265px;
-    font-size: 36px;
-    line-height: 48px;
+  .about-us .about-us-image-2 {
+    left: -58.6px;
   }
 
-  .home .home-text-container h3 {
-    font-size: 36px;
-    line-height: 42px;
-    width: 340px;
-    align-self: flex-end;
+  .about-us .about-us-image-2 img,
+  .about-us .square {
+    width: 193.739px;
+    height: 129.159px;
   }
 
-  .home .home-text-container p {
-    font-size: 16px;
+  .about-us .square {
+    left: 14.4px;
+    top: -14.4px;
   }
-} */
+}
 
 @media (max-width: 400px) {
   ::-webkit-scrollbar {
@@ -229,7 +244,6 @@
   }
 
   .home {
-    padding: 121px 16px 33px;
     max-width: 400px;
   }
 
@@ -245,6 +259,55 @@
     align-self: flex-end;
     width: 195px;
     font-size: 16px;
+  }
+
+  .about-us .title-article {
+    font-size: 32px;
+  }
+
+  .about-us .clients h2 {
+    font-size: 32px;
+    line-height: normal;
+    margin-left: 0;
+  }
+
+  .about-us .clients .clients-logo {
+    gap: 64px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(1) img {
+    width: 120.396px;
+    height: 80px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(2) img {
+    width: 66.016px;
+    height: 64px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(3) img {
+    width: 188.591px;
+    height: 48px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(4) img {
+    width: 47.494px;
+    height: 48px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(5) img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(6) img {
+    width: 113.013px;
+    height: 48px;
+  }
+
+  .about-us .clients .clients-logo li:nth-child(7) img {
+    width: 115.894px;
+    height: 42px;
   }
 
   .contact-us .footer-container {

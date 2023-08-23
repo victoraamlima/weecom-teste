@@ -1,31 +1,32 @@
 .about-us {
   position: relative;
-  /* height: 120.8rem; */
   display: flex;
   flex-direction: column;
   gap: 6.9rem;
-  /* padding: 11rem 0 0 30.1rem; */
-  padding: 11rem 3rem 6.9rem calc(1vw * (301 / 19.2));
-  /* padding: 11rem 0 0 calc(15.68vw - 5vw); */
+  padding: 11rem 3rem 6.9rem 30.1rem;
+  /* padding: 11rem 3rem 6.9rem calc(1vw * (301 / 19.2)); */
   width: 100%;
-  max-width: 192rem;
+  /* max-width: 192rem; */
+  max-width: 1920px;
   background-color: #fff;
 }
 
 .about-us .about-us-grid {
   top: 8.9rem;
+  left: 0;
 }
 
 .about-us .content-container {
   display: flex;
   position: relative;
-  position: relative;
   padding-left: 2.4rem;
+  width: fit-content;
 }
 
 .about-us .title-article {
   position: absolute;
-  left: 34.8rem;
+  /* left: 34.8rem; */
+  right: 63.1rem;
   top: 2.7rem;
   font-family: "kanit", sans-serif;
   font-size: 6.4rem;
@@ -55,9 +56,12 @@
   position: relative;
   left: -14.6rem;
   top: -6.2rem;
+  border-radius: 4rem;
+}
+
+.about-us .about-us-image-2 img {
   width: 48.6rem;
   height: 32.4rem;
-  border-radius: 4rem;
 }
 
 .about-us .square {
@@ -67,17 +71,18 @@
   width: 48.4rem;
   height: 31.5rem;
   background-image: url("../images/Rectangle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .about-us .about-us-text-container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  max-height: 19.2rem;
-  padding-top: 17.1rem;
+  /* padding-top: 17.1rem; */
   padding-top: calc(1vw * (171 / 19.2));
-  width: 51.2rem;
-  min-width: 51.2rem;
+  /* max-height: 19.2rem; */
+  max-width: 51.2rem;
   font-family: "kanit", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
