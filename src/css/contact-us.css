@@ -3,24 +3,26 @@
   /* gap: 9.7rem; */
   gap: calc(1vw * (97 / 19.2));
   position: relative;
-  padding: 8rem 0 8rem 8rem;
   padding: 8rem;
+  /* padding: 80px; */
   width: 100%;
-  max-width: 192rem;
+  max-width: 1920px;
   background-color: #28103e;
 }
 
 .contact-us .contact-us-email h2 {
   color: #f2f2f2;
   font-family: "kanit", sans-serif;
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
+  font-size: 32px;
   font-weight: 500;
 }
 
 .contact-us .contact-us-email p {
   color: #fff;
   font-family: "kanit", sans-serif;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -31,18 +33,26 @@
 .contact-us .our-address {
   color: #f2f2f2;
   font-family: "kanit", sans-serif;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
   font-weight: 400;
   max-width: 19.6rem;
+  /* max-width: 196px; */
 }
 
 .contact-us .our-address h3 {
-  color: #e9ce40;
   margin-bottom: 2.4rem;
+  font-weight: 400;
+  color: #e9ce40;
 }
 
 .contact-us .our-address p:nth-child(2) {
   margin-bottom: 2.4rem;
+}
+
+.contact-us .footer-container {
+  display: flex;
+  gap: calc(1vw * (97 / 19.2));
 }
 
 .contact-us .footer-list-container {
@@ -54,7 +64,8 @@
 .contact-us .footer-list-container li {
   color: #f2f2f2;
   font-family: "kanit", sans-serif;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -67,7 +78,8 @@
   color: #f2f2f2;
   margin-bottom: 2.3rem;
   font-family: "kanit", sans-serif;
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
+  font-size: 32px;
   font-weight: 500;
 }
 
@@ -77,8 +89,10 @@
   padding: 1.6rem 3.2rem 1.6rem 4rem;
   border: 2px solid #d9d9d9;
   white-space: nowrap;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 20px;
   letter-spacing: 0.46rem;
+  /* letter-spacing: 4.6px; */
   background: transparent;
 }
 
@@ -106,7 +120,8 @@
   left: 8.2rem;
   bottom: 1.9rem;
   font-family: "kanit", sans-serif;
-  font-size: 1.4rem;
+  /* font-size: 1.4rem */
+  font-size: 14px;
   font-weight: 400;
   color: #b1b1b1;
 }

@@ -1,0 +1,256 @@
+@media (max-width: 1500px) {
+  html {
+    font-size: 8px;
+  }
+
+  .about-us .images-container {
+    height: 590px;
+  }
+
+  .about-us .clients .clients-logo {
+    justify-content: center;
+  }
+
+  .contact-us {
+    gap: 40px;
+    text-align: center;
+  }
+
+  .contact-us .our-address {
+    max-width: none;
+  }
+
+  .contact-us .footer-container {
+    gap: 40px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 6px;
+  }
+
+  .about-us {
+    padding-left: 10rem;
+  }
+
+  .about-us .images-container {
+    height: 440px;
+  }
+
+  .about-us .about-us-text-container {
+    font-size: 12px;
+    max-width: 510px;
+    padding-top: 70px;
+  }
+
+  .contact-us {
+    justify-content: center;
+    align-items: center;
+    padding: 42px 25px 70px;
+  }
+
+  .contact-us .contact-us-email h2 {
+    margin-bottom: 16px;
+  }
+
+  .contact-us .join-newsletter {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding: 121px 16px 33px;
+    justify-content: center;
+
+    background-position: 24%;
+  }
+
+  .home .balls-container {
+    left: 45px;
+    height: 185px;
+
+    /* width: 100%; */
+  }
+
+  .home .balls.ball-1 {
+    width: 158px;
+    height: 158px;
+
+    filter: blur(0px);
+    backdrop-filter: blur(24px);
+  }
+
+  .home .balls.ball-2 {
+    align-self: flex-end;
+    /* backdrop-filter: blur(24px); */
+
+    filter: blur(13.5px);
+    backdrop-filter: none;
+    width: 106px;
+    height: 106px;
+    background: linear-gradient(
+      143deg,
+      rgba(224, 226, 109, 0.7) 0%,
+      rgba(214, 15, 247, 0.7) 100%
+    );
+  }
+
+  .home .home-text-container {
+    max-width: 625px;
+  }
+
+  .home .home-text-container h2 {
+    width: 350px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .home .home-text-container h3 {
+    align-self: flex-end;
+    max-width: 390px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .about-us {
+    gap: 63px;
+    padding: 36px 17px;
+  }
+
+  .about-us .content-container {
+    flex-direction: column-reverse;
+    gap: 35px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .about-us .title-article {
+    position: static;
+  }
+
+  .about-us .title-article span {
+    color: #333333;
+  }
+
+  .about-us .images-container {
+    align-self: center;
+    padding-left: 90px;
+  }
+
+  .about-us .about-us-text-container {
+    font-size: 16px;
+    align-self: center;
+    padding-top: 0;
+  }
+
+  .about-us .clients {
+    padding: 0 27px;
+  }
+
+  .our-projects .our-projects-header ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .our-projects .our-projects-header .our-projects-types.type-2,
+  .our-projects .our-projects-header .our-projects-types.type-3,
+  .our-projects .our-projects-header .our-projects-types.type-4,
+  .our-projects .our-projects-header .our-projects-types.type-5 {
+    margin-top: 0;
+  }
+
+  .our-projects .achievements {
+    display: flex;
+    margin-top: 9.6rem;
+
+    gap: 50px;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    padding: 42px 25px 24px;
+  }
+
+  .contact-us .our-address {
+    padding: 0 44px;
+  }
+
+  .contact-us .footer-container {
+    gap: 125px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-us .copyright {
+    position: static;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .home {
+    padding: 121px 16px 33px;
+  }
+
+  .home .home-text-container h2 {
+    width: 265px;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .home .home-text-container h3 {
+    font-size: 36px;
+    line-height: 42px;
+    width: 340px;
+    align-self: flex-end;
+  }
+
+  .home .home-text-container p {
+    font-size: 16px;
+  }
+} */
+
+@media (max-width: 400px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .pattern-button {
+    gap: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    letter-spacing: 3.68px;
+  }
+
+  .arrow {
+    transform: scale(calc(29 / 33));
+  }
+
+  .home {
+    padding: 121px 16px 33px;
+    max-width: 400px;
+  }
+
+  .home .balls-container {
+    width: 100%;
+  }
+
+  .home .home-text-container h2 {
+    width: 265px;
+  }
+
+  .home .home-text-container p {
+    align-self: flex-end;
+    width: 195px;
+    font-size: 16px;
+  }
+
+  .contact-us .footer-container {
+    align-self: flex-start;
+    gap: 20px;
+    max-width: 270px;
+    justify-content: space-between;
+  }
+}
