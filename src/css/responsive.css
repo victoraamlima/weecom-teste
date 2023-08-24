@@ -264,7 +264,7 @@
   .button-container.testimonials-button {
     align-self: center;
     position: static;
-    margin-left:-15px;
+    margin-left: -15px;
   }
 }
 
@@ -442,7 +442,16 @@
     font-size: 16px;
   }
 
-  
+  .careers .careers-grid {
+    top: -175px;
+  }
+
+  .careers p {
+    max-width: 122.3rem;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 32px;
+  }
 
   .contact-us .footer-container {
     align-self: flex-start;
