@@ -66,7 +66,7 @@
   position: relative;
   height: 100%;
   padding: 2.65rem 2.9rem 2.65rem 4.9rem;
-  border-radius: 4rem;
+  border-radius: 3.7rem;
   white-space: nowrap;
   font-family: "kanit", sans-serif;
   font-size: 3.2rem;
@@ -74,6 +74,40 @@
   color: #cfff11;
   background-color: rgba(166, 129, 242, 0.3);
 }
+
+.our-projects .our-projects-header .our-projects-types::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.our-projects .our-projects-header .our-projects-types.type-1::after {
+  background-image: url("../images/border/vector-1.svg");
+}
+
+.our-projects .our-projects-header .our-projects-types.type-2::after {
+  background-image: url("../images/border/vector-2.svg");
+}
+
+.our-projects .our-projects-header .our-projects-types.type-3::after {
+  background-image: url("../images/border/vector-3.svg");
+}
+
+.our-projects .our-projects-header .our-projects-types.type-4::after {
+  background-image: url("../images/border/vector-4.svg");
+}
+
+.our-projects .our-projects-header .our-projects-types.type-5::after {
+  background-image: url("../images/border/vector-5.svg");
+}
+
 
 .our-projects .our-projects-header .our-projects-types.type-2 {
   margin-top: 5rem;
@@ -90,23 +124,6 @@
 .our-projects .our-projects-header .our-projects-types.type-5 {
   margin-top: 5.8rem;
 }
-
-/* .our-projects .our-projects-header svg {
-    width: 265px;
-    height: 1160px;
-  } */
-
-/* .our-projects .our-projects-header li::after {
-      content: "";
-      position: absolute;
-      background-image: url("../images/Vector.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 10px;
-  }  */
 
 .our-projects .achievements {
   display: flex;
@@ -206,7 +223,6 @@
   flex-direction: column;
   align-items: center;
   padding: 30.7rem 3rem 210px;
-  /* padding: 0 3rem; */
   background-color: #6c40e9;
   background-image: url("../images/kai-dahms-SbrZdkLtTCY-unsplash.png");
   background-size: cover;
@@ -220,6 +236,10 @@
   font-weight: 500;
   line-height: 10rem;
   color: #f2f2f2;
+}
+
+.carousel-testimonials-container {
+  position: relative;
 }
 
 .our-projects .our-projects-testimonials .carousel-testimonials {

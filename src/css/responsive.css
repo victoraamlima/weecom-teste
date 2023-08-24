@@ -406,6 +406,15 @@
     text-align: center;
     font-size: 20px;
     background-color: rgba(166, 129, 242, 0.2);
+    border: 1px solid rgba(242, 242, 242, 0.3);
+  }
+  
+  .our-projects .our-projects-header .our-projects-types.type-1::after,
+  .our-projects .our-projects-header .our-projects-types.type-2::after,
+  .our-projects .our-projects-header .our-projects-types.type-3::after,
+  .our-projects .our-projects-header .our-projects-types.type-4::after,
+  .our-projects .our-projects-header .our-projects-types.type-5::after {
+    display: none;
   }
 
   .our-projects .achievements {
@@ -430,6 +439,11 @@
   .our-projects .carousel .carousel-images-container {
     width: 390px;
     height: 262px;
+  }
+
+  .our-projects .carousel .carousel-images.image-2,
+  .our-projects .carousel .carousel-images.image-3 {
+    display: none;
   }
 
   .our-projects .carousel .carousel-images footer {
