@@ -61,11 +61,20 @@
 }
 
 @media (max-width: 900px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
   .image-grid {
     width: 1440px;
     height: 638px;
     max-width: 1440px;
     max-height: 720px;
+  }
+
+  .button-container {
+    transform: scale(0.75);
   }
 
   .home {
@@ -199,6 +208,64 @@
   .contact-us .copyright {
     position: static;
   }
+
+  .our-projects .our-projects-testimonials {
+    align-items: flex-start;
+    padding: 144px 15px 75px;
+  }
+
+  .our-projects .our-projects-testimonials .carousel-testimonials-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-projects .our-projects-testimonials h3 {
+    align-self: center;
+    margin-left: -15px;
+  }
+
+  .our-projects .our-projects-testimonials .carousel-testimonials {
+    gap: 24px;
+    width: calc(100vw - 15px);
+    height: 286px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .our-projects
+    .our-projects-testimonials
+    .carousel-testimonials
+    .carousel-card {
+    height: 250px;
+    padding: 32px;
+    border-radius: 20px;
+  }
+
+  .our-projects .our-projects-testimonials p {
+    width: 157px;
+    letter-spacing: normal;
+    font-size: 16px;
+  }
+
+  .our-projects .our-projects-testimonials span {
+    font-size: 12px;
+  }
+
+  .button-container.projects-button {
+    width: fit-content;
+    bottom: -80px;
+    left: calc(50% - 120px);
+  }
+
+  .button-container.testimonials-button {
+    align-self: center;
+    position: static;
+    margin-left:-15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -228,9 +295,9 @@
 }
 
 @media (max-width: 400px) {
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: 0px;
-  }
+  } */
 
   .pattern-button {
     gap: 8px;
@@ -242,6 +309,14 @@
   .arrow {
     transform: scale(calc(29 / 33));
   }
+
+  /* .button-container.projects-button {
+  transform: scale(0.75);
+  } */
+
+  /* .button-container .button-carousel {
+  transform: scale(0.75);
+  } */
 
   .home {
     max-width: 400px;
@@ -309,6 +384,65 @@
     width: 115.894px;
     height: 42px;
   }
+
+  .our-projects .our-projects-header {
+    padding: 5.9rem 0 124px;
+  }
+
+  .our-projects .our-projects-header h2 {
+    font-size: 32px;
+  }
+
+  .our-projects .our-projects-header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 36px;
+  }
+
+  .our-projects .our-projects-header .our-projects-types {
+    width: fit-content;
+    padding: 17.5px 42px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(166, 129, 242, 0.2);
+  }
+
+  .our-projects .achievements {
+    flex-direction: column;
+    text-align: center;
+    gap: 54px;
+    margin-top: 54px;
+  }
+
+  .our-projects .achievements h3 {
+    font-size: 64px;
+  }
+
+  .our-projects .achievements p {
+    font-size: 20px;
+  }
+
+  .our-projects .carousel {
+    flex-direction: column;
+  }
+
+  .our-projects .carousel .carousel-images-container {
+    width: 390px;
+    height: 262px;
+  }
+
+  .our-projects .carousel .carousel-images footer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .our-projects .carousel .carousel-images h4,
+  .our-projects .carousel .carousel-images span {
+    font-size: 16px;
+  }
+
+  
 
   .contact-us .footer-container {
     align-self: flex-start;
