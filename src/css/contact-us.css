@@ -109,9 +109,9 @@
   color: #fff;
 }
 
-.pattern-button:hover .arrow,
-.pattern-button:hover .arrow:before,
-.pattern-button:hover .arrow:after {
+.join-newsletter-button:hover .arrow,
+.join-newsletter-button:hover .arrow:before,
+.join-newsletter-button:hover .arrow:after {
   background-color: #fff;
 }
 
