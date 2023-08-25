@@ -24,6 +24,7 @@
 
     <script type="text/javascript" src="./src/js/form-validation.js" defer></script>
     <script type="text/javascript" src="./src/js/carousel-projects.js" defer></script>
+    <script type="text/javascript" src="./src/js/carousel-testimonials.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -255,11 +256,11 @@
 
       <div class="button-container projects-button">
         <button class="button-carousel left-button-projects disable">
-          <span class="arrow arrow-carousel left-arrow disable"></span>
+          <span id="left-arrow-projects" class="arrow arrow-carousel left-arrow disable"></span>
         </button>
 
         <button class="button-carousel right-button-projects">
-          <span class="arrow arrow-carousel right-arrow"></span>
+          <span id="right-arrow-projects" class="arrow arrow-carousel right-arrow"></span>
         </button>
       </div>
 
@@ -302,7 +303,7 @@
           </nav>
 
           <div class="button-container testimonials-button">
-            <button class="button-carousel disable">
+            <button class="button-carousel left-button-testimonials disable">
               <span class="arrow arrow-carousel left-arrow disable"></span>
             </button>
 

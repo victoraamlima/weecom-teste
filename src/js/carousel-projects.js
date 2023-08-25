@@ -3,16 +3,16 @@ const carouselProjects = document.getElementsByClassName("carousel-projects")[0]
 const leftButtonProjects = document.getElementsByClassName(
   "left-button-projects"
 )[0]
-const leftArrowProjects = document.getElementsByClassName(
-  "arrow-carousel left-arrow"
-)[0]
+const leftArrowProjects = document.getElementById(
+  "left-arrow-projects"
+)
 
 const rightButtonProjects = document.getElementsByClassName(
   "right-button-projects"
 )[0]
-const rightArrowProjects = document.getElementsByClassName(
-  "arrow-carousel right-arrow"
-)[0]
+const rightArrowProjects = document.getElementById(
+  "right-arrow-projects"
+)
 
 let windowWidth
 let carouselWidth
