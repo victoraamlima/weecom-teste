@@ -5,6 +5,10 @@ body {
   background-color: #28103e;
 }
 
+body .show{
+  display: flex;
+}
+
 .pattern-button {
   all: unset;
   display: flex;
@@ -16,6 +20,7 @@ body {
   padding: 1.6rem 4rem;
   border-radius: 4rem;
   box-sizing: border-box;
+  cursor: pointer;
   font-family: "kanit", sans-serif;
   font-size: 3.2rem;
   font-weight: 400;
@@ -23,6 +28,7 @@ body {
   color: #fff;
   background: #6c40e9;
   transition: 0.2s ease-in-out;
+
 }
 
 .arrow {
