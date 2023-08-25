@@ -227,8 +227,10 @@
   gap: 21px;
   justify-content: flex-start;
   position: relative;
-  margin-left: 16.2rem;
-  height: 47.7rem;
+  /* margin-left: 16.2rem; */
+  /* height: 47.7rem; */
+  margin-left: 162px;
+  height: 477px;
   overflow-x: hidden;
 }
 
@@ -236,9 +238,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 47.7rem;
+  /* height: 47.7rem;
   padding: 4.2rem;
-  border-radius: 2rem;
+  border-radius: 2rem; */
+  height: 477px;
+  padding: 42px;
+  border-radius: 20px;
   border: 1px solid rgba(245, 245, 245, 0.3);
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.15);
@@ -247,16 +252,20 @@
 .our-projects .our-projects-testimonials p {
   color: #f2f2f2;
   font-family: "Kanit", sans-serif;
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
+  font-size: 32px;
   font-weight: 400;
-  letter-spacing: 0.128rem;
-  width: 30.8rem;
+  /* letter-spacing: 0.128rem; */
+  letter-spacing: 1.28px;
+  /* width: 30.8rem; */
+  width: 308px;
 }
 
 .our-projects .our-projects-testimonials span {
   color: #fff;
   font-family: "Kanit", sans-serif;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
+  font-size: 16px;
   font-weight: 400;
 }
 

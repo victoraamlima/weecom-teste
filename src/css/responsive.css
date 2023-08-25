@@ -457,10 +457,10 @@
     height: 262px;
   }
 
-  .our-projects .carousel-projects .carousel-images.image-2,
+  /* .our-projects .carousel-projects .carousel-images.image-2,
   .our-projects .carousel-projects .carousel-images.image-3 {
     display: none;
-  }
+  } */
 
   .our-projects .carousel-projects .carousel-images footer {
     flex-direction: column-reverse;
