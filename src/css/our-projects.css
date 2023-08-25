@@ -1,38 +1,7 @@
-.button-container {
-  position: absolute;
-  display: flex;
-  gap: 16px;
-  z-index: 5;
-}
-
-.button-carousel .arrow.arrow-carousel {
-  width: 7.8rem;
-  height: 0.4rem;
-}
-
-.button-carousel .arrow.arrow-carousel:before,
-.button-carousel .arrow.arrow-carousel:after {
-  width: 30%;
-  height: 95%;
-}
-
-.button-carousel .arrow.arrow-carousel:before {
-  top: -0.7rem;
-  rotate: 45deg;
-}
-
-.button-carousel .arrow.arrow-carousel:after {
-  top: 0.7rem;
-  rotate: -45deg;
-}
-
-.button-carousel .left-arrow {
-  rotate: 180deg;
-}
-
 .our-projects {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   max-width: 192rem;
   background: linear-gradient(180deg, #000916 0%, #070010 100%);
@@ -108,7 +77,6 @@
   background-image: url("../images/border/vector-5.svg");
 }
 
-
 .our-projects .our-projects-header .our-projects-types.type-2 {
   margin-top: 5rem;
 }
@@ -150,11 +118,16 @@
 .our-projects .carousel {
   display: flex;
   position: relative;
+  max-width: 1920px;
+  height: 45.7rem;
+  overflow-x: hidden;
 }
 
 .our-projects .carousel .carousel-images-container {
   height: 45.7rem;
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
+  /* width: 640px; */
+  min-width: 64rem;
 }
 
 .our-projects .carousel .carousel-images {
@@ -183,7 +156,6 @@
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  /* padding: 2.8rem 4rem; */
   padding: 2.8rem 2.08vw;
   background: linear-gradient(
     0deg,
@@ -214,23 +186,24 @@
 }
 
 .button-container.projects-button {
-  bottom: -135px;
-  right: 14.5rem;
+  top: 128.6rem;
 }
 
 .our-projects .our-projects-testimonials {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 30.7rem 3rem 210px;
+  align-items: flex-start;
+  padding: 30.7rem 0 162px;
   background-color: #6c40e9;
   background-image: url("../images/kai-dahms-SbrZdkLtTCY-unsplash.png");
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .our-projects .our-projects-testimonials h3 {
   margin-bottom: 4.2rem;
+  padding-left: 16.2rem;
   font-family: "Kanit", sans-serif;
   font-size: 6.4rem;
   font-weight: 500;
@@ -240,24 +213,27 @@
 
 .carousel-testimonials-container {
   position: relative;
+  width: 100%;
 }
 
 .our-projects .our-projects-testimonials .carousel-testimonials {
   display: flex;
-  gap: 2.1rem;
+  gap: 21px;
+  justify-content: flex-start;
   position: relative;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-left: 16.2rem;
+  height: 47.7rem;
+  overflow-x: hidden;
 }
 
 .our-projects .our-projects-testimonials .carousel-testimonials .carousel-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 47.6rem;
+  height: 47.7rem;
   padding: 4.2rem;
   border-radius: 2rem;
-  border: 1px solid #f5f5f5;
+  border: 1px solid rgba(245, 245, 245, 0.3);
   backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.15);
 }
@@ -279,6 +255,6 @@
 }
 
 .button-container.testimonials-button {
+  /* bottom: -11.3rem; */
   bottom: -113px;
-  right: 0;
 }
