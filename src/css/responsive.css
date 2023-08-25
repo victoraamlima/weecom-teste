@@ -173,7 +173,10 @@
 
   .our-projects .our-projects-header ul {
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 36px;
   }
 
   .our-projects .our-projects-header .our-projects-types.type-2,
@@ -190,28 +193,15 @@
     gap: 50px;
   }
 
-  .contact-us {
-    flex-direction: column;
-    padding: 42px 25px 24px;
-  }
-
-  .contact-us .our-address {
-    padding: 0 44px;
-  }
-
-  .contact-us .footer-container {
-    gap: 125px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .contact-us .copyright {
-    position: static;
+  .button-container.projects-button {
+    top: 1000px;
+    left: calc(50% - 155px);
   }
 
   .our-projects .our-projects-testimonials {
     align-items: flex-start;
     padding: 144px 15px 75px;
+    background-position: 100% 50%;
   }
 
   .our-projects .our-projects-testimonials .carousel-testimonials-container {
@@ -222,18 +212,14 @@
   .our-projects .our-projects-testimonials h3 {
     align-self: center;
     margin-left: -15px;
+    padding: 0;
   }
 
   .our-projects .our-projects-testimonials .carousel-testimonials {
     gap: 24px;
     width: calc(100vw - 15px);
     height: 286px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    overflow: hidden;
-    overflow-x: hidden;
-    flex-wrap: nowrap;
+    margin-left: 30px;
   }
 
   .our-projects
@@ -255,16 +241,33 @@
     font-size: 12px;
   }
 
-  .button-container.projects-button {
-    width: fit-content;
-    bottom: -80px;
-    left: calc(50% - 120px);
-  }
-
   .button-container.testimonials-button {
     align-self: center;
     position: static;
     margin-left: -15px;
+  }
+
+  .careers {
+    padding: 7.2rem 5rem 123px;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    padding: 42px 25px 24px;
+  }
+
+  .contact-us .our-address {
+    padding: 0 44px;
+  }
+
+  .contact-us .footer-container {
+    gap: 125px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-us .copyright {
+    position: static;
   }
 }
 
@@ -347,7 +350,8 @@
   }
 
   .about-us .clients .clients-logo {
-    gap: 64px;
+    row-gap: 42px;
+    column-gap: 64px;
   }
 
   .about-us .clients .clients-logo li:nth-child(1) img {
@@ -408,7 +412,7 @@
     background-color: rgba(166, 129, 242, 0.2);
     border: 1px solid rgba(242, 242, 242, 0.3);
   }
-  
+
   .our-projects .our-projects-header .our-projects-types.type-1::after,
   .our-projects .our-projects-header .our-projects-types.type-2::after,
   .our-projects .our-projects-header .our-projects-types.type-3::after,
@@ -426,6 +430,7 @@
 
   .our-projects .achievements h3 {
     font-size: 64px;
+    font-family: "Kanit", sans-serif;
   }
 
   .our-projects .achievements p {
@@ -433,11 +438,14 @@
   }
 
   .our-projects .carousel {
-    flex-direction: column;
+    /* flex-direction: column; */
+    height: auto;
   }
 
   .our-projects .carousel .carousel-images-container {
-    width: 390px;
+    /* width: 390px; */
+    /* width: 100vw; */
+    min-width: 100vw;
     height: 262px;
   }
 
@@ -456,6 +464,15 @@
     font-size: 16px;
   }
 
+  .button-container.projects-button {
+    top: 1200px;
+    left: calc(50% - 125px);
+  }
+
+  .our-projects .our-projects-testimonials .carousel-testimonials {
+    margin-left: 0;
+  }
+
   .careers .careers-grid {
     top: -175px;
   }
@@ -466,6 +483,26 @@
     letter-spacing: normal;
     font-size: 32px;
   }
+
+  .contact-us .our-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us .our-address p:nth-child(2) {
+    width: 190px;
+    text-align: center;
+  }
+
+  .contact-us .our-address p:nth-child(4) {
+    width: 200px;
+    text-align: center;
+  }
+
+  /* .contact-us .our-address p {
+
+  } */
 
   .contact-us .footer-container {
     align-self: flex-start;
