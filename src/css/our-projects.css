@@ -115,22 +115,27 @@
   white-space: nowrap;
 }
 
-.our-projects .carousel {
+.our-projects .carousel-projects {
   display: flex;
   position: relative;
   max-width: 1920px;
-  height: 45.7rem;
+  /* width: 1920px; */
+  /* height: 45.7rem; */
+  margin-left: 0px;
+  height: 457px;
   overflow-x: hidden;
 }
 
-.our-projects .carousel .carousel-images-container {
-  height: 45.7rem;
-  /* width: calc(100% / 3); */
-  /* width: 640px; */
-  min-width: 64rem;
+.our-projects .carousel-projects .carousel-images-container {
+  /* height: 45.7rem; */
+  /* height: 457px; */
+  height: 100%;
+
+  /* min-width: 64rem; */
+  min-width: 640px;
 }
 
-.our-projects .carousel .carousel-images {
+.our-projects .carousel-projects .carousel-images {
   display: flex;
   align-items: flex-end;
   height: 100%;
@@ -140,17 +145,17 @@
   background-repeat: no-repeat;
 }
 
-.our-projects .carousel .carousel-images.image-1 {
+.our-projects .carousel-projects .carousel-images.image-1 {
   background-image: url("../images/luke-chesser-JKUTrJ4vK00-unsplash.png");
 }
-.our-projects .carousel .carousel-images.image-2 {
+.our-projects .carousel-projects .carousel-images.image-2 {
   background-image: url("../images/path-digital-tR0jvlsmCuQ-unsplash.png");
 }
-.our-projects .carousel .carousel-images.image-3 {
+.our-projects .carousel-projects .carousel-images.image-3 {
   background-image: url("../images/brian-mcgowan-WJ0WWNdmJ3Y-unsplash.png");
 }
 
-.our-projects .carousel .carousel-images footer {
+.our-projects .carousel-projects .carousel-images footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -164,7 +169,7 @@
   );
 }
 
-.our-projects .carousel .carousel-images h4 {
+.our-projects .carousel-projects .carousel-images h4 {
   padding: 0.8rem 2rem;
   border-radius: 4rem;
   border: 0.1rem solid #f2f2f2;
@@ -176,7 +181,7 @@
   color: #fff;
 }
 
-.our-projects .carousel .carousel-images span {
+.our-projects .carousel-projects .carousel-images span {
   font-family: "Kanit", sans-serif;
   white-space: nowrap;
   font-size: 2rem;
@@ -186,7 +191,8 @@
 }
 
 .button-container.projects-button {
-  top: 128.6rem;
+  /* top: 128.6rem; */
+  top: 1286px;
 }
 
 .our-projects .our-projects-testimonials {

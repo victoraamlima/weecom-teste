@@ -11,6 +11,10 @@
     justify-content: center;
   }
 
+  .button-container.projects-button {
+    top: 1090px;
+}
+
   .contact-us {
     gap: 40px;
     text-align: center;
@@ -44,6 +48,10 @@
     max-width: 510px;
     padding-top: 70px;
   }
+
+  .button-container.projects-button {
+    top: 925px;
+}
 
   .contact-us {
     justify-content: center;
@@ -194,7 +202,7 @@
   }
 
   .button-container.projects-button {
-    top: 1000px;
+    top: 1170px;
     left: calc(50% - 155px);
   }
 
@@ -437,30 +445,30 @@
     font-size: 20px;
   }
 
-  .our-projects .carousel {
+  .our-projects .carousel-projects {
     /* flex-direction: column; */
     height: auto;
   }
 
-  .our-projects .carousel .carousel-images-container {
+  .our-projects .carousel-projects .carousel-images-container {
     /* width: 390px; */
     /* width: 100vw; */
     min-width: 100vw;
     height: 262px;
   }
 
-  .our-projects .carousel .carousel-images.image-2,
-  .our-projects .carousel .carousel-images.image-3 {
+  .our-projects .carousel-projects .carousel-images.image-2,
+  .our-projects .carousel-projects .carousel-images.image-3 {
     display: none;
   }
 
-  .our-projects .carousel .carousel-images footer {
+  .our-projects .carousel-projects .carousel-images footer {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
 
-  .our-projects .carousel .carousel-images h4,
-  .our-projects .carousel .carousel-images span {
+  .our-projects .carousel-projects .carousel-images h4,
+  .our-projects .carousel-projects .carousel-images span {
     font-size: 16px;
   }
 
