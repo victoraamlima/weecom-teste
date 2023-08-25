@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="./src/css/contact-us.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
-    <script type="text/javascript" src="./src/js/index.js" defer></script>
+    <script type="text/javascript" src="./src/js/form-validation.js" defer></script>
+    <script type="text/javascript" src="./src/js/carosel.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -369,11 +370,43 @@
       <div class="join-newsletter">
         <h2>Join the newsletter!</h2>
 
-        <button class="pattern-button join-newsletter-button">
+        <button
+          class="pattern-button join-newsletter-button"
+          onclick="openForm()"
+        >
           <span>your e-mail address</span>
 
           <span class="arrow"></span>
         </button>
+
+        <form class="form-newsletter" action="">
+          <button
+            class="exit-form-container"
+            type="button"
+            onclick="closeForm()"
+          >
+            <span class="exit-form"></span>
+          </button>
+
+          <label for="form-name" class="form-label">Nome</label>
+
+          <input
+            type="text"
+            name="name"
+            id="form-name"
+            class="form-input"
+            placeholder="Nome"
+          />
+          <span class="invalid-input invalid-name">Nome invalido</span>
+
+          <label for="form-email" class="form-label">E-mail</label>
+
+          <input type="email" name="email" id="form-email" class="form-input"
+          placeholder="E-mail"/>
+          <span class="invalid-input invalid-email">Email invalido</span>
+
+          <button class="button-submit" type="button">ENVIAR</button>
+        </form>
       </div>
 
       <span class="copyright">Copyright by Beady Agency, 2023</span>

@@ -107,6 +107,8 @@
 
 .contact-us .join-newsletter .join-newsletter-button:hover {
   color: #fff;
+  outline: none;
+  background-color: #7f59e9;
 }
 
 .join-newsletter-button:hover .arrow,
@@ -115,12 +117,102 @@
   background-color: #fff;
 }
 
+.form-newsletter {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  padding: 20px 50px 50px;
+  z-index: 9;
+  border-radius: 3%;
+  background-color: #7f59e9;
+}
+
+.contact-us .join-newsletter .form-newsletter .exit-form-container {
+  all: unset;
+  position: relative;
+  right: -400px;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact-us .join-newsletter .form-newsletter .exit-form {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  rotate: 45deg;
+}
+
+.contact-us .join-newsletter .form-newsletter .exit-form::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  rotate: 90deg;
+}
+
+.contact-us .join-newsletter .form-newsletter .form-label {
+  color: #000;
+  font-family: "kanit", sans-serif;
+  /* font-size: 3.2rem; */
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  all: unset;
+  color: #000;
+  width: 400px;
+  /* height: 50px; */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  font-family: "kanit", sans-serif;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+
+.invalid {
+  border-color: rgb(216, 8, 8);
+}
+
+.contact-us .join-newsletter .form-newsletter button {
+  margin-top: 50px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "kanit", sans-serif;
+  font-size: 20px;
+}
+
+.invalid-input {
+  display: none;
+  position: relative;
+  top: -20px;
+  font-family: "kanit", sans-serif;
+  font-size: 20px;
+  color: rgb(216, 8, 8);
+  justify-content: center;
+}
+
 .contact-us .copyright {
   position: absolute;
   left: 8.2rem;
   bottom: 1.9rem;
   font-family: "kanit", sans-serif;
-  /* font-size: 1.4rem */
   font-size: 14px;
   font-weight: 400;
   color: #b1b1b1;
