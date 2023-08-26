@@ -10,10 +10,20 @@ const rightButtonProjects = document.getElementsByClassName(
 )[0]
 const rightArrowProjects = document.getElementById("right-arrow-projects")
 
+let marginLeftProjects
+
+
+
+window.addEventListener(`resize`, () => {
+  console.log(111)
+
+  carouselProjects.style.marginLeft = `0px`
+})
+
 rightButtonProjects.addEventListener("click", () => {
   let windowWidth = window.innerWidth
   let carouselWidth = carouselProjects.offsetWidth
-  let marginLeftProjects = parseInt(
+  marginLeftProjects = parseInt(
     window.getComputedStyle(carouselProjects).getPropertyValue("margin-left")
   )
 
@@ -22,7 +32,7 @@ rightButtonProjects.addEventListener("click", () => {
   if (windowWidth >= 400) {
     maxCarouselWidth = 1920
   } else {
-    maxCarouselWidth = 1185
+    maxCarouselWidth = 1170
   }
 
   let marginLeft = marginLeftProjects - 100 + "px"
@@ -49,9 +59,6 @@ rightButtonProjects.addEventListener("click", () => {
     // leftButtonProjects.classList.remove("disable")
     // leftArrowProjects.classList.remove("disable")
   }
-
-
-  
 })
 
 leftButtonProjects.addEventListener("click", () => {
@@ -66,20 +73,28 @@ leftButtonProjects.addEventListener("click", () => {
   if (windowWidth >= 400) {
     maxCarouselWidth = 1920
   } else {
-    maxCarouselWidth = 1185
+    maxCarouselWidth = 1170
   }
 
   let marginLeft = marginLeftProjects + 100 + "px"
 
   let disableLeftButton = leftButtonProjects.classList.length === 3
 
-
   if (marginLeftProjects < 0 && !disableLeftButton) {
     console.log(carouselWidth - maxCarouselWidth)
     carouselProjects.style.marginLeft = marginLeft
+
+    rightButtonProjects.classList.remove("disable")
+    rightArrowProjects.classList.remove("disable")
   }
 
-  if (marginLeftProjects + 100 >= 0) {
+  marginLeftProjects = parseInt(
+    window.getComputedStyle(carouselProjects).getPropertyValue("margin-left")
+  )
+
+  if (marginLeftProjects  > 0) {
+    carouselProjects.style.marginLeft = `0px`
+
     leftButtonProjects.classList.add("disable")
     leftArrowProjects.classList.add("disable")
   } else {
