@@ -75,7 +75,6 @@
   }
 
   .image-grid {
-    width: 1440px;
     height: 638px;
     max-width: 1440px;
     max-height: 720px;
@@ -319,6 +318,10 @@
 
   .arrow {
     transform: scale(calc(29 / 33));
+  }
+
+  .image-grid {
+    background-size: 365% 114%;
   }
 
   /* .button-container.projects-button {
