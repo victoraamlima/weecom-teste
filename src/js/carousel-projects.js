@@ -55,9 +55,6 @@ rightButtonProjects.addEventListener("click", () => {
 
     rightButtonProjects.classList.add("disable")
     rightArrowProjects.classList.add("disable")
-
-    // leftButtonProjects.classList.remove("disable")
-    // leftArrowProjects.classList.remove("disable")
   }
 })
 
