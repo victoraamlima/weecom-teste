@@ -152,6 +152,10 @@ body .show {
   z-index: 0;
 }
 
+.menu-page li {
+cursor: pointer;
+}
+
 #go-to-top {
   display: flex;
   align-items: center;
@@ -159,8 +163,8 @@ body .show {
   position: fixed;
   bottom: 5rem;
   right: 5rem;
-  width: 50px;
-  height: 50px;
+  width: 10rem;
+  height: 10rem;
   z-index: 5;
   cursor: pointer;
   background: rgb(108, 64, 233, 0.7);
