@@ -1,7 +1,15 @@
-$(document).ready(function () {
-  $("#go-to-top").fadeOut(500)
+function showHideGoToTop() {
+  if (window.scrollY <= 0) {
+    $("#go-to-top").fadeOut(500)
+  } else {
+    $("#go-to-top").fadeIn(500)
+  }
+}
 
-  $(".menu li a").click(function (e) {
+$(document).ready(function () {
+  showHideGoToTop()
+
+  $(".menu-page li a").click(function (e) {
     e.preventDefault()
     let id = $(this).prop("hash")
     let targetOffset = $(id).offset().top
@@ -10,11 +18,7 @@ $(document).ready(function () {
   })
 
   window.addEventListener(`scroll`, () => {
-    if (window.scrollY <= 0) {
-      $("#go-to-top").fadeOut(500)
-    } else {
-      $("#go-to-top").fadeIn(500)
-    }
+    showHideGoToTop()
   })
 
   $("#go-to-top").click(function () {
