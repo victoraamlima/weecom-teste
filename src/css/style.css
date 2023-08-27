@@ -5,7 +5,7 @@ body {
   background-color: #28103e;
 }
 
-body .show{
+body .show {
   display: flex;
 }
 
@@ -28,7 +28,6 @@ body .show{
   color: #fff;
   background: #6c40e9;
   transition: 0.2s ease-in-out;
-
 }
 
 .arrow {
@@ -91,7 +90,6 @@ body .show{
   display: flex;
   gap: 16px;
   z-index: 5;
-
 }
 
 .button-container .button-carousel {
@@ -152,4 +150,53 @@ body .show{
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 0;
+}
+
+#go-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  cursor: pointer;
+  background: rgb(108, 64, 233, 0.7);
+}
+
+#go-to-top span {
+  position: relative;
+  display: flex;
+  width: 0.4rem;
+  height: 4rem;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+#go-to-top span:before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: -0.8rem;
+  display: block;
+  width: 0.4rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  transform: rotate(45deg);
+}
+
+#go-to-top span:after {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: 0.8rem;
+  display: block;
+  width: 0.4rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  transform: rotate(-45deg);
 }
