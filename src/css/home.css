@@ -2,12 +2,10 @@
   position: relative;
   display: flex;
   width: 100%;
-  /* max-width: 192rem; */
   max-width: 1920px;
   padding: 18.8rem 10rem 14.5rem calc( 1vw * (297/19.2));
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   background-image: url("../images/pawel-czerwinski-FAlYVtV1kRg-unsplash\ 1.png");
 }
 
@@ -18,7 +16,6 @@
   top: 17.4rem;
   left: 18.2rem;
   max-width: 132.8rem;
-  /* width: 100%; */
   width: 69.17vw;
   height: 57.1rem;
 }
@@ -82,5 +79,3 @@
   font-size: 3.2rem;
   font-weight: 500;
 }
-
-

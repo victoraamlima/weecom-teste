@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="./src/css/responsive.css" />
 
     <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script type="text/javascript" src="./src/js/index.js" defer></script>
+    <script
       type="text/javascript"
       src="./src/js/form-validation.js"
       defer
@@ -39,6 +47,7 @@
     ></script>
   </head>
   <body>
+    <span id="go-to-top"><span></span></span>
     <header class="header">
       <a href="#" class="company-logo">
         <svg
@@ -73,7 +82,7 @@
           </div>
         </label>
 
-        <ul>
+        <ul class="menu-page">
           <li><a href="#home">Home</a></li>
           <li><a href="#about-us">About Us</a></li>
           <li><a href="#our-projects">Services</a></li>
@@ -374,22 +383,26 @@
       </div>
 
       <div class="footer-container">
-        <ul class="footer-list-container">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Works</li>
-          <li>Career</li>
-          <li>Contact Us</li>
-        </ul>
+        <nav>
+          <ul class="footer-list-container menu-page">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#our-projects">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
 
-        <ul class="footer-list-container">
-          <li>Follow Us</li>
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>LinkedIn</li>
-          <li>Twitter</li>
-        </ul>
+        <nav>
+          <ul class="footer-list-container">
+            <li>Follow Us</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+          </ul>
+        </nav>
       </div>
 
       <div class="join-newsletter">

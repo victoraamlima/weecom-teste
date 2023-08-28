@@ -4,9 +4,7 @@
   flex-direction: column;
   gap: 6.9rem;
   padding: 11rem 3rem 6.9rem 30.1rem;
-  /* padding: 11rem 3rem 6.9rem calc(1vw * (301 / 19.2)); */
   width: 100%;
-  /* max-width: 192rem; */
   max-width: 1920px;
   background-color: #fff;
 }
@@ -25,7 +23,6 @@
 
 .about-us .title-article {
   position: absolute;
-  /* left: 34.8rem; */
   right: 63.1rem;
   top: 2.7rem;
   font-family: "kanit", sans-serif;
@@ -79,9 +76,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  /* padding-top: 17.1rem; */
   padding-top: calc(1vw * (171 / 19.2));
-  /* max-height: 19.2rem; */
   max-width: 51.2rem;
   font-family: "kanit", sans-serif;
   font-size: 1.6rem;
@@ -89,7 +84,6 @@
 }
 
 .about-us .clients {
-  /* padding-left: 30.1rem; */
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
