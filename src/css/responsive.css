@@ -207,7 +207,7 @@
 
   .our-projects .our-projects-testimonials {
     align-items: flex-start;
-    padding: 144px 15px 75px;
+    padding: 144px 0 75px 15px;
     background-position: 100% 50%;
   }
 
@@ -224,7 +224,7 @@
 
   .our-projects .our-projects-testimonials .carousel-testimonials {
     gap: 24px;
-    width: calc(100vw - 15px);
+    /* width: calc(100vw - 15px); */
     height: 286px;
     margin-left: 30px;
   }

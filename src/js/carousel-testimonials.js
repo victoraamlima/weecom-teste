@@ -14,55 +14,56 @@ const rightArrowTestimonials = document.getElementById(
   "right-arrow-testimonials"
 )
 
-// console.log(window.getComputedStyle(carouselTestimonials).getPropertyValue("margin-left"))
-// console.log(window.innerWidth)
-// console.log(carouselTestimonials.offsetWidth)
-// console.log(
-//   window.innerWidth -
-//     carouselTestimonials.offsetWidth -
-//     parseInt(
-//       window
-//         .getComputedStyle(carouselTestimonials)
-//         .getPropertyValue("margin-left")
-//     )
-// )
+let marginLeftTestimonials
+
+if (window.innerWidth >= 900) {
+  marginLeftTestimonials = "162px"
+} else {
+  marginLeftTestimonials = "0"
+}
 
 rightButtonTestimonials.addEventListener("click", () => {
   let windowWidth = window.innerWidth
   let carouselWidth = carouselTestimonials.offsetWidth
 
-  let marginLeft = parseInt(
+  let maxCarouselWidth
+
+  if (windowWidth >= 900) {
+    maxCarouselWidth = 1758
+  } else {
+    // maxCarouselWidth = 964
+    maxCarouselWidth = 980
+  }
+
+  let marginLeftTestimonials = parseInt(
     window
       .getComputedStyle(carouselTestimonials)
       .getPropertyValue("margin-left")
   )
-    console.log(marginLeft)
 
-    marginLeft -= 1650 - carouselWidth
-
-//   marginLeft -= windowWidth - carouselWidth - marginLeft + 15
-//   marginLeft -= windowWidth - carouselWidth - marginLeft
-
-  marginLeft += "px"
+  let marginLeft = marginLeftTestimonials - 100 + "px"
 
   let disableRightButton = rightButtonTestimonials.classList.length === 3
 
-  //   console.log(marginLeft)
-  //   console.log(carouselWidth)
-  //   console.log(windowWidth - carouselWidth)
+  console.log(carouselWidth - maxCarouselWidth)
 
-  if (carouselWidth < 1650 && !disableRightButton) {
-    console.log(marginLeft)
+  // if (carouselWidth - maxCarouselWidth <= -100 && !disableRightButton) {
 
+  //   carouselTestimonials.style.marginLeft = marginLeft
+
+  //   leftButtonTestimonials.classList.remove("disable")
+  //   leftArrowTestimonials.classList.remove("disable")
+  // }
+  if (carouselWidth - maxCarouselWidth <= 0 && !disableRightButton) {
     carouselTestimonials.style.marginLeft = marginLeft
-
-    rightButtonTestimonials.classList.add("disable")
-    rightArrowTestimonials.classList.add("disable")
 
     leftButtonTestimonials.classList.remove("disable")
     leftArrowTestimonials.classList.remove("disable")
+  }
 
-
+  if (carouselWidth - maxCarouselWidth >= -100) {
+    rightButtonTestimonials.classList.add("disable")
+    rightArrowTestimonials.classList.add("disable")
   }
 })
 

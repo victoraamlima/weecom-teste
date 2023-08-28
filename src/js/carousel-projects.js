@@ -15,9 +15,8 @@ let marginLeftProjects
 
 
 window.addEventListener(`resize`, () => {
-  console.log(111)
-
   carouselProjects.style.marginLeft = `0px`
+  carouselTestimonials.style.marginLeft = marginLeftTestimonials
 })
 
 rightButtonProjects.addEventListener("click", () => {
@@ -38,13 +37,15 @@ rightButtonProjects.addEventListener("click", () => {
   let marginLeft = marginLeftProjects - 100 + "px"
 
   let disableRightButton = rightButtonProjects.classList.length === 3
-
+  console.log(carouselWidth - maxCarouselWidth)
   if (carouselWidth - maxCarouselWidth < 0 && !disableRightButton) {
     carouselProjects.style.marginLeft = marginLeft
 
     leftButtonProjects.classList.remove("disable")
     leftArrowProjects.classList.remove("disable")
   }
+
+  console.log(carouselWidth - maxCarouselWidth)
 
   if (carouselWidth - maxCarouselWidth >= -100 && !disableRightButton) {
     marginLeft = parseInt(marginLeft)
