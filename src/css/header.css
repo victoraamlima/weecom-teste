@@ -4,11 +4,24 @@
   align-items: center;
   justify-content: space-between;
   top: 30px;
-  padding: 0 278px 0 325px;
+  padding: 0 233px 0 325px;
   color: #fff;
   width: 100%;
   max-width: 1920px;
   z-index: 5;
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.2s;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .header .company-logo {
@@ -106,6 +119,10 @@
   font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
+}
+
+.header .menu ul li:hover {
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .header .menu ul a:hover::after {

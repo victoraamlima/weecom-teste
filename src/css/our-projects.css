@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 5.9rem 0 12.4rem;
+  padding: 6.5rem 0 12.5rem;
   background: linear-gradient(180deg, #000916 0%, #070010 100%);
 }
 
@@ -34,7 +34,7 @@
 .our-projects .our-projects-header .our-projects-types {
   position: relative;
   height: 100%;
-  padding: 2.65rem 2.9rem 2.65rem 4.9rem;
+  padding: 3.5rem 2.9rem 3.5rem 4.9rem;
   border-radius: 3.7rem;
   white-space: nowrap;
   font-family: "kanit", sans-serif;
@@ -185,14 +185,14 @@
 }
 
 .button-container.projects-button {
-  top: 1286px;
+  top: 1250px;
 }
 
 .our-projects .our-projects-testimonials {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 30.7rem 0 162px;
+  padding: 30.7rem 0 200px;
   background-color: #6c40e9;
   background-image: url("../images/kai-dahms-SbrZdkLtTCY-unsplash.png");
   background-size: cover;
@@ -253,5 +253,5 @@
 }
 
 .button-container.testimonials-button {
-  bottom: -113px;
+  bottom: -100px;
 }

@@ -9,6 +9,11 @@
   background-color: #fff;
 }
 
+.about-us-animation {
+  animation: swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation-delay: 0.2s;
+}
+
 .about-us .about-us-grid {
   top: 8.9rem;
   left: 0;
@@ -19,6 +24,7 @@
   position: relative;
   padding-left: 2.4rem;
   width: fit-content;
+  opacity: 0;
 }
 
 .about-us .title-article {
@@ -87,6 +93,12 @@
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
+  opacity: 0;
+}
+
+.clients-animation {
+  animation: flip-in-hor-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1s;
 }
 
 .about-us .clients h2 {
